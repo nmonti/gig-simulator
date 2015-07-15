@@ -1,7 +1,7 @@
 $(document).ready(function() {
   
   $('#btn').click(function() {
-    jam(0);
+    heckle(0);
     $(this).fadeOut(1500, function(){
       $('#background').css('opacity', 1);
     });
@@ -13,13 +13,13 @@ $(document).ready(function() {
 
 function simulate(){
   setInterval(function(){
-    var groove = Math.floor(Math.random() * 5) + 1;
-    jam(groove);
+    var insult = Math.floor(Math.random() * 5) + 1;
+    heckle(insult);
   }, 4000);
 }
 
-function jam(groove){
-  switch(groove) {
+function heckle(insult){
+  switch(insult) {
     case 0:
       $('#audience').attr('src', 'audio/begin.mp3');
       $('#audience')[0].play();
