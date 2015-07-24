@@ -57,3 +57,9 @@ div#darken {
 div.darken #background {
   display: block;
 }
+
+p#pause {
+  font-size: 100px;
+  text-align: center;
+  color: red;
+}
